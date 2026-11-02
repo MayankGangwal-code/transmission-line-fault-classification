@@ -1,0 +1,507 @@
+{
+  "package_version": "1.0.0",
+  "n_train": 6600,
+  "n_test": 3300,
+  "n_unseen": 2200,
+  "n_features": 58,
+  "features": [
+    "triggered",
+    "v_a",
+    "i_a",
+    "di_a",
+    "dv_a",
+    "ri_a",
+    "v_b",
+    "i_b",
+    "di_b",
+    "dv_b",
+    "ri_b",
+    "v_c",
+    "i_c",
+    "di_c",
+    "dv_c",
+    "ri_c",
+    "dir_a",
+    "dir_b",
+    "dir_c",
+    "v0",
+    "i0",
+    "v1",
+    "i1",
+    "v2",
+    "i2",
+    "r_i0",
+    "r_i2",
+    "r_v0",
+    "r_v2",
+    "di1",
+    "ri1",
+    "r_i0_di1",
+    "r_i2_di1",
+    "ires",
+    "cos_a20",
+    "sin_a20",
+    "cos_a21",
+    "sin_a21",
+    "cos_a01",
+    "sin_a01",
+    "zmag_ag",
+    "x_ag",
+    "r_ag",
+    "zmag_bg",
+    "x_bg",
+    "r_bg",
+    "zmag_cg",
+    "x_cg",
+    "r_cg",
+    "zmag_ab",
+    "x_ab",
+    "r_ab",
+    "zmag_bc",
+    "x_bc",
+    "r_bc",
+    "zmag_ca",
+    "x_ca",
+    "r_ca"
+  ],
+  "decision_cycles": 1.0,
+  "locate_cycles": 3.0,
+  "train_snr_db": 40.0,
+  "best_ml": "Random Forest",
+  "cv_macro_f1_train": {
+    "k-Nearest Neighbours": 0.9974,
+    "Neural Network": 0.9986,
+    "Random Forest": 1.0,
+    "Gradient Boosting": 1.0
+  },
+  "test": {
+    "Overcurrent rule": {
+      "accuracy": 0.9824,
+      "macro_f1": 0.9823,
+      "group_accuracy": 0.9824,
+      "detection_accuracy": 0.9824,
+      "missed_faults": 0.0,
+      "false_trips": 58.0,
+      "n": 3300.0
+    },
+    "Sequence-angle relay logic": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "group_accuracy": 1.0,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 3300.0
+    },
+    "k-Nearest Neighbours": {
+      "accuracy": 0.9982,
+      "macro_f1": 0.9982,
+      "group_accuracy": 0.9982,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 3300.0
+    },
+    "Neural Network": {
+      "accuracy": 0.9994,
+      "macro_f1": 0.9994,
+      "group_accuracy": 0.9994,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 3300.0
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "group_accuracy": 1.0,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 3300.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "group_accuracy": 1.0,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 3300.0
+    }
+  },
+  "unseen_system": {
+    "Overcurrent rule": {
+      "accuracy": 0.9795,
+      "macro_f1": 0.9793,
+      "group_accuracy": 0.9795,
+      "detection_accuracy": 0.9795,
+      "missed_faults": 0.0,
+      "false_trips": 45.0,
+      "n": 2200.0
+    },
+    "Sequence-angle relay logic": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "group_accuracy": 1.0,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 2200.0
+    },
+    "k-Nearest Neighbours": {
+      "accuracy": 0.9968,
+      "macro_f1": 0.9968,
+      "group_accuracy": 0.9968,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 2200.0
+    },
+    "Neural Network": {
+      "accuracy": 0.9964,
+      "macro_f1": 0.9964,
+      "group_accuracy": 0.9964,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 2200.0
+    },
+    "Random Forest": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "group_accuracy": 1.0,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 2200.0
+    },
+    "Gradient Boosting": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "group_accuracy": 1.0,
+      "detection_accuracy": 1.0,
+      "missed_faults": 0.0,
+      "false_trips": 0.0,
+      "n": 2200.0
+    }
+  },
+  "decision_time": {
+    "0.25": {
+      "Overcurrent rule": 0.7518,
+      "Sequence-angle relay logic": 0.757,
+      "Random Forest (trained at this time)": 0.9985
+    },
+    "0.5": {
+      "Overcurrent rule": 0.9364,
+      "Sequence-angle relay logic": 0.9024,
+      "Random Forest (trained at this time)": 1.0
+    },
+    "0.75": {
+      "Overcurrent rule": 0.9858,
+      "Sequence-angle relay logic": 0.9991,
+      "Random Forest (trained at this time)": 1.0
+    },
+    "1.0": {
+      "Overcurrent rule": 0.9824,
+      "Sequence-angle relay logic": 1.0,
+      "Random Forest (trained at this time)": 1.0
+    },
+    "1.5": {
+      "Overcurrent rule": 0.9821,
+      "Sequence-angle relay logic": 0.9997,
+      "Random Forest (trained at this time)": 1.0
+    },
+    "2.0": {
+      "Overcurrent rule": 0.9827,
+      "Sequence-angle relay logic": 1.0,
+      "Random Forest (trained at this time)": 1.0
+    }
+  },
+  "noise": {
+    "clean": {
+      "Overcurrent rule": 0.9824,
+      "Sequence-angle relay logic": 1.0,
+      "k-Nearest Neighbours": 0.9988,
+      "Neural Network": 0.9994,
+      "Random Forest": 1.0,
+      "Gradient Boosting": 1.0
+    },
+    "40 dB": {
+      "Overcurrent rule": 0.9824,
+      "Sequence-angle relay logic": 1.0,
+      "k-Nearest Neighbours": 0.9982,
+      "Neural Network": 0.9994,
+      "Random Forest": 1.0,
+      "Gradient Boosting": 1.0
+    },
+    "35 dB": {
+      "Overcurrent rule": 0.9824,
+      "Sequence-angle relay logic": 1.0,
+      "k-Nearest Neighbours": 0.9982,
+      "Neural Network": 0.9994,
+      "Random Forest": 1.0,
+      "Gradient Boosting": 1.0
+    },
+    "30 dB": {
+      "Overcurrent rule": 0.9821,
+      "Sequence-angle relay logic": 1.0,
+      "k-Nearest Neighbours": 0.9982,
+      "Neural Network": 0.9985,
+      "Random Forest": 1.0,
+      "Gradient Boosting": 0.9961
+    },
+    "25 dB": {
+      "Overcurrent rule": 0.9773,
+      "Sequence-angle relay logic": 0.9945,
+      "k-Nearest Neighbours": 0.9882,
+      "Neural Network": 0.9891,
+      "Random Forest": 0.9927,
+      "Gradient Boosting": 0.9836
+    },
+    "20 dB": {
+      "Overcurrent rule": 0.7336,
+      "Sequence-angle relay logic": 0.7424,
+      "k-Nearest Neighbours": 0.7012,
+      "Neural Network": 0.6873,
+      "Random Forest": 0.6942,
+      "Gradient Boosting": 0.6791
+    }
+  },
+  "high_resistance_accuracy_rf_gt_20ohm": {
+    "Overcurrent rule": 1.0,
+    "Sequence-angle relay logic": 1.0,
+    "k-Nearest Neighbours": 0.9888,
+    "Neural Network": 1.0,
+    "Random Forest": 1.0,
+    "Gradient Boosting": 1.0
+  },
+  "n_high_resistance": 268,
+  "location": {
+    "Reactance method": {
+      "mae_km": 1.709,
+      "median_km": 0.695,
+      "p90_km": 3.6,
+      "max_km": 56.673
+    },
+    "Takagi method": {
+      "mae_km": 0.675,
+      "median_km": 0.465,
+      "p90_km": 1.546,
+      "max_km": 8.095
+    },
+    "ML regressor (gradient boosting)": {
+      "mae_km": 1.113,
+      "median_km": 0.789,
+      "p90_km": 2.448,
+      "max_km": 11.733
+    }
+  },
+  "location_by_rf_median_km": {
+    "(0.0, 0.5]": {
+      "Reactance": 0.488,
+      "Takagi": 0.478,
+      "ML": 0.634
+    },
+    "(0.5, 2.0]": {
+      "Reactance": 0.602,
+      "Takagi": 0.445,
+      "ML": 0.68
+    },
+    "(2.0, 5.0]": {
+      "Reactance": 0.892,
+      "Takagi": 0.419,
+      "ML": 0.839
+    },
+    "(5.0, 10.0]": {
+      "Reactance": 1.151,
+      "Takagi": 0.497,
+      "ML": 1.065
+    },
+    "(10.0, 20.0]": {
+      "Reactance": 1.174,
+      "Takagi": 0.483,
+      "ML": 1.258
+    },
+    "(20.0, 60.0]": {
+      "Reactance": 1.7,
+      "Takagi": 0.565,
+      "ML": 1.321
+    }
+  },
+  "location_bolted_rf_lt_0p5": {
+    "reactance": 0.488,
+    "takagi": 0.478,
+    "ml": 0.634
+  },
+  "feature_importance_top10": {
+    "r_i2_di1": 0.056,
+    "r_i0": 0.0551,
+    "ires": 0.0474,
+    "cos_a21": 0.0415,
+    "r_i0_di1": 0.0402,
+    "di_c": 0.0388,
+    "di_a": 0.0385,
+    "di_b": 0.0364,
+    "r_i2": 0.0342,
+    "dir_b": 0.0307
+  },
+  "kaggle": {
+    "n_rows": 7861,
+    "n_classes": 6,
+    "n_runs": 6,
+    "random_split_accuracy": 0.8664688427299704,
+    "time_block_split_accuracy": 0.8823779193205945,
+    "samples_per_cycle_by_run": {
+      "1001": 400.0,
+      "1101": 9.0,
+      "0110": null,
+      "1110": 9.0,
+      "1111": 9.0,
+      "0000": 400.0
+    }
+  },
+  "fit_seconds": {
+    "k-Nearest Neighbours": 0.0,
+    "Neural Network": 0.7,
+    "Random Forest": 3.0,
+    "Gradient Boosting": 3.5
+  },
+  "per_class_best": {
+    "none": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "AG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "BG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "CG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "AB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "BC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "CA": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "ABG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "BCG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "CAG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "ABC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    }
+  },
+  "per_class_sequence_rule": {
+    "none": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "AG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "BG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "CG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "AB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "BC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "CA": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "ABG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "BCG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "CAG": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    },
+    "ABC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 300
+    }
+  },
+  "runtime_s": 125.6
+}
